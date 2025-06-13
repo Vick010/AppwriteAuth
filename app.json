@@ -38,6 +38,9 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "linking": {
+      "prefixes": ["appwriteauth://"]
     }
   }
 }
