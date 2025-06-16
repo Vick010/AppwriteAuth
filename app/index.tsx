@@ -100,7 +100,7 @@ export default function Index() {
 
   const sendVerificationEmail = async () => {
     try {
-      const redirectUrl = "https://victorkipchirchirkibet.co.ke/verify";
+      const redirectUrl = "victorauth://verify";
       await account.createVerification(redirectUrl);
       console.log("Verification email sent");
       Alert.alert(
@@ -116,7 +116,7 @@ export default function Index() {
   const resendVerification = async () => {
     try {
       setIsLoading(true);
-      const redirectUrl = "https://victorkipchirchirkibet.co.ke/verify";
+      const redirectUrl = "victorauth://verify";
       await account.createVerification(redirectUrl);
       Alert.alert(
         "Verification Email Sent",

@@ -90,7 +90,7 @@ export default function Verify() {
 
     setVerificationStatus("resending");
     try {
-      const redirectUrl = "https://victorkipchirchirkibet.co.ke/verify";
+      const redirectUrl = "victorauth://verify";
       await account.createVerification(redirectUrl);
       Alert.alert(
         "Email Sent",
